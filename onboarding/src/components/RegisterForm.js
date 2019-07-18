@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { withFormik, Form, Field } from 'formik';
 import Loader from 'react-loader-spinner';
 import * as Yup from 'yup';
@@ -40,7 +40,7 @@ const RegisterForm = ({ values, errors, touched, isSubmitting, props }) => {
 }
 
 const FormikLoginForm = withFormik({
-  mapPropsToValues({ firstName, lastName,  password, email, tos }) {
+  mapPropsToValues({ firstName, lastName, password, email, tos }) {
     return {
       firstName: firstName || "",
       lastName:  lastName || "",
@@ -69,7 +69,7 @@ const FormikLoginForm = withFormik({
       .required("Your last name is required"),
     email: Yup.string()
       .email()
-      .max(20, "Your email cannot be longer then 12 characters")
+      .max(20, "Your email cannot be longer then 20 characters")
       .required("Your email is required"),
     password: Yup.string()
       .min(6, "Your password must be longer than 6 characters")
