@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87c0f5+0,c6dff4+100 */
+  background: #87c0f5; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #87c0f5 0%, #c6dff4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #87c0f5 0%,#c6dff4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #87c0f5 0%,#c6dff4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87c0f5', endColorstr='#c6dff4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import './App';
